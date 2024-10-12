@@ -1,0 +1,133 @@
+PS C:\Users\Тогжан> https://github.com/Togzhan05/project.git
+https://github.com/Togzhan05/project.git : Имя 
+"https://github.com/Togzhan05/project.git" не распознано как имя командлета, функции,   
+файла сценария или выполняемой программы. Проверьте правильность написания имени, а     
+также наличие и правильность пути, после чего повторите попытку.
+строка:1 знак:1
++ https://github.com/Togzhan05/project.git
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://github.com/Togzhan05/project.gi  
+   t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Тогжан> git clone https://github.com/Togzhan05/project.git
+Cloning into 'project'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\Тогжан> git init
+Reinitialized existing Git repository in C:/Users/Тогжан/.git/
+PS C:\Users\Тогжан> git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Тогжан@DESKTOP-FRNLRRB.(none)')        
+PS C:\Users\Тогжан>  git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Documents/Мои видеозаписи/': Permission denied       
+warning: could not open directory 'Documents/мои рисунки/': Permission denied
+warning: could not open directory 'Documents/Моя музыка/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'главное меню/': Permission denied
+warning: could not open directory 'Мои документы/': Permission denied
+warning: could not open directory 'Шаблоны/': Permission denied
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idlerc/
+        .vscode/
+        AppData/
+        Boot 1.html
+        Contacts/
+        Desktop/
+        Downloads/
+        Favorites/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+        NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        PycharmProjects/
+        Saved Games/
+        Searches/
+        Videos/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        project/
+        source/
+        "\320\233\320\260\320\261 4.html"
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Тогжан> git revert
+usage: git revert [--[no-]edit] [-n] [-m <parent-number>] [-s] [-S[<keyid>]] <commit>...
+   or: git revert (--continue | --skip | --abort | --quit)
+
+    --quit                end revert or cherry-pick sequence
+    --continue            resume revert or cherry-pick sequence
+    --abort               cancel revert or cherry-pick sequence
+    --skip                skip current commit and continue
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    -n, --no-commit       don't automatically commit
+    --commit              opposite of --no-commit
+    -e, --[no-]edit       edit the commit message
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -m, --[no-]mainline <parent-number>
+                          select mainline parent
+    --[no-]rerere-autoupdate
+                          update the index with reused conflict resolution if possible  
+    --[no-]strategy <strategy>
+                          merge strategy
+    -X, --[no-]strategy-option <option>
+                          option for merge strategy
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+    --[no-]reference      use the 'reference' format to refer to commits
+
+PS C:\Users\Тогжан> git branch
+PS C:\Users\Тогжан> git merge
+fatal: No remote for the current branch.
+PS C:\Users\Тогжан> git log
+fatal: your current branch 'master' does not have any commits yet
+PS C:\Users\Тогжан> git log -oneline 
+fatal: your current branch 'master' does not have any commits yet
+PS C:\Users\Тогжан> git diff
+PS C:\Users\Тогжан> echo "# project" >> README.md
+>> git init
+>> git add README.md
+>> git commit -m "first commit"
+>> git branch -M main
+>> git remote add origin https://github.com/Togzhan05/project.git
+>> git push -u origin main
+Reinitialized existing Git repository in C:/Users/Тогжан/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Тогжан@DESKTOP-FRNLRRB.(none)')        
+error: src refspec main does not match any
